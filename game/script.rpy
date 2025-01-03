@@ -245,4 +245,10 @@ label chapter_2:
         hide kahneman with dissolve
         hide tversky with dissolve
         s "All in all, prospect theory boils down to avoiding risks when it comes to gains, preferring certainty and smaller gains over risk and larger gains, and seeking risks when it comes to losses,  preferring probable smaller losses over certain larger losses."
-        s "While prospect theory as a heuristic is certainly helpful in helping us lighten our cognitive load and makes the optimal decisions most of the time, Like Kahneman has said, as with most heuristics, there are times when it won’t give you the best outcome possible (though the outcomes brought about by prospect theory may not be as exaggerated in this game) and understanding prospect"
+        s "While prospect theory as a heuristic is certainly helpful in helping us lighten our cognitive load and makes the optimal decisions most of the time, Like Kahneman has said, as with most heuristics, there are times when it won’t give you the best outcome possible (though the outcomes brought about by prospect theory may not be as exaggerated in this game) and understanding prospect theory will allow us to make better decisions despite them."
+        s "When it comes to things like vacation and travel, Studies by Van De Kaa (2010) and Lin et al. (2023) have shown that prospect theory actually does a better job of describing people’s choices in travel and tourism than utility theory because of prospect theory’s flexibility in describing different decision making strategies, different reference points for choices and concept of loss aversion."
+        s "It was because of these 2 studies that I wanted to apply my experience of planning a trip to Japan as well as the decisions that I made during that trip to prospect theory."
+
+        s "Now that was just a surface level description of prospect theory, it has so much nuance and there is so much to uncover-"
+        # look back time
+        s "Okay, maybe it’s for the best that we don’t go deeper into it haha\nLet’s move onto the next chapter of this game, to my experiences in Japan!"

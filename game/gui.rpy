@@ -404,6 +404,7 @@ define gui.nvl_button_xpos = 675
 define gui.nvl_button_xalign = 0.0
 
 
+
 ## Localization ################################################################
 
 ## This controls where a line break is permitted. The default is suitable
