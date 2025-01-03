@@ -1,5 +1,0 @@
-*.rpa
-*.rpyc
-cache/
-log/
-renpy/common/
