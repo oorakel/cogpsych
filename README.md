@@ -21,7 +21,7 @@ Prospect Theory: An Interactive Visual Novel is a Ren'Py game designed to explor
 - Replay the game to discover alternative endings!
 
 ## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the GNU General Public License v3.0 (GPL-3.0) License. See the `LICENSE` file for details.
 
 ## Acknowledgments
 - Developed using [Ren'Py](https://www.renpy.org/).
