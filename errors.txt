@@ -2,29 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/gui.rpy", line 406: expected 'word' not found.
-    style.window = Style(style.default)
+File "game/script.rpy", line 287: expected statement.
+    "Yes":
          ^
 
-File "game/gui.rpy", line 407: expected 'word' not found.
-    style.window.xalign = 0.5
-         ^
-
-File "game/gui.rpy", line 408: expected 'word' not found.
-    style.window.yalign = 0.8
-         ^
-
-File "game/gui.rpy", line 409: expected 'word' not found.
-    style.window.width = 600
-         ^
-
-File "game/gui.rpy", line 410: expected 'word' not found.
-    style.window.height = 400
-         ^
-
-File "game/gui.rpy", line 411: expected 'word' not found.
-    style.window.scroll = True
-         ^
+File "game/script.rpy", line 289: expected statement.
+    "No":
+        ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Jan  3 17:39:24 2025
+Fri Jan  3 22:57:09 2025

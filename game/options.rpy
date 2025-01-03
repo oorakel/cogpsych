@@ -151,7 +151,7 @@ define config.save_directory = "Cogpsych-1735890111"
 ##
 ## The icon displayed on the taskbar or dock.
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "gui/silly.jpg"
 
 
 ## Build configuration #########################################################
