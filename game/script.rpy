@@ -4,6 +4,8 @@
 define s = Character("Shawn", color="#0080ff") # blue
 define m = Character("Mum", color="#800080") # purple
 define t = Character("Travel Influencer", color="#008000") # green
+define k = Character("Kahneman", color = "#b00000") # red
+define tv = Character("Tversky", color = "#ffc800") # yellow
 
 # The game starts here.
 
@@ -173,5 +175,74 @@ label start: # chapter 1
             "All in all, you, the player, made the optimal choices for most of the scenarios! Despite your good judgement and decision making, a lot of people may not have made the optimal choices because of a decision making framework that is based in prospect theory."
 
         "I’ll have a more in depth discussion of what prospect theory is in the next chapter of this game."
-
+    jump chapter_2
     return # important: Ends the chapter
+
+label chapter_2:
+    scene bg classroom # Replace with classroom background
+    show kahneman # Replace with image
+    show tversky at right # Replace with image
+    with dissolve
+
+    "The year is 1979. The dominant theory in decision-making is Utility Theory, which posits that people evaluate choices—called prospects—based on their usefulness and likelihood. But cracks in this theory are beginning to show, and two economists are on the brink of proposing something revolutionary."
+    "You somehow find yourself in that very classroom where a breakthrough in Economic theory is about to happen. You overhear two prominent economics discussing the prevailing utility theory."
+
+    k "So, Tversky, utility theory defines a prospect as a gamble, a choice with various outcomes and probabilities. It’s elegant, really—expected utility calculates a prospect's attractiveness by averaging each individual outcome’s usefulness with its likelihood. Logical, isn’t it?"
+    tv "Logical, sure. But people aren’t calculators, Kahneman. They have emotions, biases, quirks. Why else would someone prefer a guaranteed $100 over a 50\% chance at $250?" # Escaped %
+    k "That is most certainly true! You know, I’ve noticed recently that people disproportionately prefer outcomes that are certain when compared to probable outcomes, even when the probable outcome is rationally better using utility theory’s method of calculating expected utility."
+    "This was later dubbed the certainty effect."
+
+    if destination == "Sapporo":
+        "Do you remember when you chose Sapporo for our travel destination? This choice reflects the certainty effect."
+    else:
+        "Do you remember when you chose Hakodate for our travel destination? According to the prospect theory’s certainty effect, most people would have chosen Sapporo. This is because Sapporo, despite seeming less fun than Hakodate, comes with the certainty of being able to do what we planned on doing because communication in Sapporo was certain. Despite the fact that Hakodate could have provided a more fun experience, the certainty that Sapporo provided outweighed that outcome and hence made it more attractive according to the certainty effect."
+
+    tv "That is true Kahneman! Another thing I realised is that when I present the same options differently, people flip-flop their preferences. They ignore shared elements and fixate on what’s unique and different between the options, even if both choices have the same outcome framed differently! Haha!"
+    "This was later named the isolation effect."
+    "Do you remember both times when you had to choose a visa? What if I were to tell you that Starr Insurance and HL Assurance’s insurance plans were objectively identical both times? Starr Insurance reimburses $450 for expenses up to $500 dollars and HL assurance reimburses 90\% of expenses. But framing one as minimising loss and the other as receiving reimbursement could lead to different preferences despite the fact that they were the same both times!" # Escaped %
+
+    k "Have you also noticed that the certainty effect was inverted when it came to scenarios where both options involved losses? People disproportionately prefer choices where decreased losses were possible than choices with confirmed larger losses."
+    "This was named the reflection effect."
+
+    if visa == "Company B":
+        "Do you remember when you chose company B for the travel visa? This choice reflects the reflection effect."
+    else:
+        "Do you remember when you chose company A for the travel visa? According to prospect theory’s reflection effect, most people would have chosen company B. This is because there is going to be a definite loss in money in having to buy a travel visa to go overseas. However, company B provided a possible lesser loss compared to company A’s confirmed larger loss. The risk aversion from the certainty effect was flipped on its head to form an aversion to loss."
+
+    "These three observations shaped the 2 economists’ new theory, prospect theory."
+    tv "Ah, a fellow decision-maker! You look like someone who has had to make a bunch of tough choices recently. Care to chat about how we make decisions?"
+
+    label prospect_theory_questions: # Loop back here
+        menu:
+            "What are the processes that take place in decision making according to prospect theory?":
+                tv "Well, when we thought about it, Kahneman and I realised that there are 2 phases to decision making, the first of which is the editing phase."
+                k "The editing phase simply refers to evaluating your options; grouping outcomes by their similarities, differences, setting a baseline (reference point) to define what is a loss and what is a gain, and finally reframing the options into more objective presentations to reduce biases caused by how choices are presented."
+                tv "Indeed. Following this stage, there's the evaluation phase, where individuals assign value to outcomes based on their usefulness and likelihood and decide on what choice to make. Kahneman and I noted that probabilities are often not weighted in a linear fashion, as low probabilities might be overestimated and moderate probabilities might be underestimated. In-line with the certainty effect and the reflection effect, we also noted that losses are weighted more heavily than gains; that is to say a loss hurts way more than an equivalent gain. After all of these values are accounted for, the individual will then make the decision with the highest subjective value."
+                jump prospect_theory_questions
+            "Were there any issues with prospect theory?":
+                tv "Why yes, there were plenty, haha! Our original function did not properly weigh rare events with extremely high impacts, underweighting them despite the fact that people still buy lottery tickets and fear plane crashes!"
+                k "Indeed, and our theory overemphasised on the “S-shaped” value function, the function that states that people dislike losses much more than they value equivalent gains. This led to scenarios where the model would point to making the objectively worse option, which does not follow stochastic dominance, a basic rule of decision making that states that if one option is clearly better across all outcomes, it will be preferred."
+                if transport == "JR Pass":
+                    "Do you remember when you were choosing the transport passes? Stochastic dominance states that most people would buy the tickets individually because it’s way cheaper than buying the JR pass, even though both bring the same outcome."
+                tv "We solved this issue by altering our probability weighting function, giving a disproportionate attention to non-likely impactful events, reflecting how people in real life view them."
+                k "We also began to calculate probabilities altogether instead of individually, avoiding violating stochastic dominance and allowing our new updated theory, called Cumulative Prospect Theory, published in 1992, to be applied to a larger area of application."
+                tv "Previously, prospect theory could only be applied to risky prospects with a small number of outcomes, whereas cumulative prospect theory can be applied to both risky and uncertain prospects where probabilities may not be precisely known!"
+                jump prospect_theory_questions
+            "Are there any external influences on what guides our decisions with respect to prospect theory?":
+                s "Well, yes! There have been multiple studies that used prospect theory as a base to see how certain influences can impact decision making. A study by Campos-Vazquez and Cuilty (2014) found that socio demographic characteristics affect rates of risk loss and aversion, but not the weighing probability function. They also found that a person’s emotional state affects decision making, with sadness increasing risk aversion in gains and risk seeking in losses, amplifying the functions of prospect theory. They also found that anger diminishes the impact of losses, reducing loss aversion significantly. But it was also found that anger does not impact risk aversion in gains in any way. Another study by Abdellaoui et al. (2011) found that even financial professionals behaved exactly according to prospect theory! Though, with a little less loss aversion. One explanation for this decreased loss aversion is desensitisation due to experience and knowledge. Even then, it’s scary to think about how even professionals with years of experience are still subject to this little cognitive bias!"
+                jump prospect_theory_questions
+            "How can we reduce the influence of the effects of prospect theory in making decisions?":
+                k "Well, with the isolation effect in mind, try visualising what each option entails, both similarities and differences."
+                tv "And with the influence of emotions on decision making, try to keep calm to minimise risk and loss aversions!"
+                k "It would also be helpful to take a moment to think about the actual probabilities of each option, taking a moment to ask yourself if you’re overestimating or underestimating their probability."
+                jump prospect_theory_questions
+            "That’s all I have to ask, thank you!":
+                jump chapter2_conclusion
+
+    label chapter2_conclusion:
+        k "Utility Theory had its strengths, but we wanted to build something that reflects real-world behavior. Remember, understanding biases isn’t about avoiding them entirely—it’s about making better decisions despite them."
+        show shawn sg at left
+        hide kahneman with dissolve
+        hide tversky with dissolve
+        s "All in all, prospect theory boils down to avoiding risks when it comes to gains, preferring certainty and smaller gains over risk and larger gains, and seeking risks when it comes to losses,  preferring probable smaller losses over certain larger losses."
+        s "While prospect theory as a heuristic is certainly helpful in helping us lighten our cognitive load and makes the optimal decisions most of the time, Like Kahneman has said, as with most heuristics, there are times when it won’t give you the best outcome possible (though the outcomes brought about by prospect theory may not be as exaggerated in this game) and understanding prospect"
