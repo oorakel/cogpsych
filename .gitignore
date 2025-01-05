@@ -1,14 +1,12 @@
 # Ignore compiled Ren'Py files
 *.rpyc
-*.rpyi
+*.rpa
 
-# Ignore Ren'Py saves
-/saves/
+# Ignore cache and logs
+cache/
+log/
+traceback.txt
+errors.txt
 
-# Ignore temporary files
-/log/
-/game/.lock/
-
-# Ignore the system's Thumbs.db (Windows) and .DS_Store (Mac)
-Thumbs.db
-.DS_Store
+# Ignore Ren'Py common files
+renpy/common/
