@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 427, in script
+    show prospectformula at center onlayer background with dissolve
+Exception: Trying to add something to non-existent layer 'background'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 427, in script
+    show prospectformula at center onlayer background with dissolve
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\ast.py", line 1117, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\ast.py", line 1080, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\exports\displayexports.py", line 503, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\display\scenelists.py", line 410, in add
+    raise Exception("Trying to add something to non-existent layer '%s'." % layer)
+Exception: Trying to add something to non-existent layer 'background'.
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.3.4.24120703
+Cogpsych 1.0
+Sun Jan  5 00:03:42 2025

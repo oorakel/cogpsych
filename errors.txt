@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 287: expected statement.
-    "Yes":
-         ^
-
-File "game/script.rpy", line 289: expected statement.
-    "No":
-        ^
+File "game/script.rpy", line 640: expected end of line
+    play music "chapter1/music/scene8" 2.0
+                                       ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Jan  3 22:57:09 2025
+Sun Jan  5 01:40:26 2025
