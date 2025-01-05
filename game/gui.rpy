@@ -57,13 +57,13 @@ define gui.interface_text_color = '#ffffff'
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "myunjo.otf"
+define gui.text_font = "fonts/myunjo.otf"
 
 ## The font used for character names.
-define gui.name_text_font = "myunjo.otf"
+define gui.name_text_font = "fonts/swung.otf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "myunjo.otf"
+define gui.interface_text_font = "fonts/shootingstar.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 33

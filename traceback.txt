@@ -1,26 +1,80 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 427, in script
-    show prospectformula at center onlayer background with dissolve
-Exception: Trying to add something to non-existent layer 'background'.
+  File "game/script.rpy", line 403, in script
+    k "This led to scenarios where the model would point to making the objectively worse option, which does not follow stochastic dominance."
+Exception: Could not find font 'fonts/shootingstar.otf'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 427, in script
-    show prospectformula at center onlayer background with dissolve
-  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\ast.py", line 1117, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\ast.py", line 1080, in show_imspec
-    renpy.config.show(name,
-  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\exports\displayexports.py", line 503, in show
-    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
-  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\display\scenelists.py", line 410, in add
-    raise Exception("Trying to add something to non-existent layer '%s'." % layer)
-Exception: Trying to add something to non-existent layer 'background'.
+  File "game/script.rpy", line 403, in script
+    k "This led to scenarios where the model would point to making the objectively worse option, which does not follow stochastic dominance."
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\ast.py", line 2579, in execute
+    Say.execute(self)
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\ast.py", line 621, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\character.py", line 1455, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\character.py", line 1106, in do_display
+    display_say(who,
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\character.py", line 803, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\display\core.py", line 2879, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\display\core.py", line 1381, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\display\screen.py", line 752, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\display\layout.py", line 1113, in render
+    surf = render(d, rw, height - y, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\display\behavior.py", line 976, in render
+    rv = super(Button, self).render(width, height, st, at)
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\display\layout.py", line 1457, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\text\text.py", line 2600, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\text\text.py", line 767, in __init__
+    glyphs = ts.glyphs(s, self)
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\text\text.py", line 340, in glyphs
+    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample, self.shaper, self.instance, self.axis)
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\text\font.py", line 745, in get_font
+    face = load_face(fn, shaper)
+  File "C:\Users\Personal\Downloads\renpy-8.3.4-sdk\renpy\text\font.py", line 673, in load_face
+    raise Exception("Could not find font {0!r}.".format(orig_fn))
+Exception: Could not find font 'fonts/shootingstar.otf'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.4.24120703
 Cogpsych 1.0
-Sun Jan  5 00:03:42 2025
+Sun Jan  5 15:43:52 2025

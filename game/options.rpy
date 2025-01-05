@@ -42,7 +42,7 @@ define build.name = "Cogpsych"
 
 
 ## Sounds and music ############################################################
-
+define config.main_menu_music = "menu_music.mp3"
 ## These three variables control, among other things, which mixers are shown
 ## to the player by default. Setting one of these to False will hide the
 ## appropriate mixer.
@@ -151,7 +151,7 @@ define config.save_directory = "Cogpsych-1735890111"
 ##
 ## The icon displayed on the taskbar or dock.
 
-define config.window_icon = "gui/silly.jpg"
+define config.window_icon = "gui/window_icon.png"
 
 
 ## Build configuration #########################################################
