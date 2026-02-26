@@ -9,16 +9,16 @@ Prospect Theory: An Interactive Visual Novel is a Ren'Py game designed to explor
 - Educational content about behavioral economics and prospect theory
 - Multiple endings based on player decisions
 
-<div align="center">
-  <img src="screenshots/s2.jpg" width="300" alt="Screenshot 2">
-  <img src="screenshots/s3.jpg" width="300" alt="Screenshot 3">
-  <img src="screenshots/s4.jpg" width="300" alt="Screenshot 4">
+<div align="left">
+  <img src="screenshots/s2.jpg" width="300" alt="s2">
+  <img src="screenshots/s3.jpg" width="300" alt="s3">
+  <img src="screenshots/s4.jpg" width="300" alt="s4">
 </div>
 
-<div align="center">
-  <img src="screenshots/s5.jpg" width="300" alt="Screenshot 5">
-  <img src="screenshots/s6.jpg" width="300" alt="Screenshot 6">
-  <img src="screenshots/s7.jpg" width="300" alt="Screenshot 7">
+<div align="left">
+  <img src="screenshots/s5.jpg" width="300" alt="s5">
+  <img src="screenshots/s6.jpg" width="300" alt="s6">
+  <img src="screenshots/s7.jpg" width="300" alt="s7">
 </div>
 
 
